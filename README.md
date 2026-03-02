@@ -41,9 +41,11 @@ The following principles guided my development of this homebrew project. The lis
 -  TMS9901 programmable systems interface (PSI)
 -  ATF16V8 PLD for address decoding
 -  ICL7660 voltage convertor to generate the -5V power supply needed by the CPU
+-  2x red LEDs for CPU RESET signal and activity (driven by the IAQ output) indication
 2. **Memory board** [(photo)](images/Memory.jpg)
 -  2x EPROMs (2764, 27128, 27256) for up to 32 KB of EPROM[^2]
 -  2x static RAM (55256) for up to 32 KB of RAM[^2]
+-  2x red LEDs for RAM and ROM access indication
 -  ATF16V8 PLD for address decoding
 -  Jumpers to control use of the EPROM A14 address line (or to select the high or low bank)
 3. **Serial I/O board** [(photo)](images/Serial_IO.jpg)
@@ -59,6 +61,7 @@ The following principles guided my development of this homebrew project. The lis
 -  4x 72-pin header sockets which support any combination of the cards above
 -  1x 72-pin header socket for daisy chaining multiple backplanes
 -  1x 72-pin header pin connector for daisy chaining multiple backplanes
+-  2x red LEDs for +5V and +12 power supply indication
 -  1x 4-pin Berg connector for +5V and +12V power supplies (compatible with 3.5 in floppy power connector)
 
 # Notes
@@ -66,6 +69,7 @@ The following principles guided my development of this homebrew project. The lis
 [^1]: A 48 MHz crystal is required for the TIM9904 and a 12 MHz crystal is required for the TIM9904A(NL). The LC tank circuit values must also be adjusted as per the notes on the CPU board schematic.
 
 [^2]: The RAM and ROM sizes can be adjusted in any combination that fits within the 64KB address space simply by adjusting the logic for the chip enable outputs in the PLD program.
+
 
 
 
