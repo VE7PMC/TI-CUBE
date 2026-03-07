@@ -29,7 +29,7 @@ The following principles guided my development of this homebrew project. The lis
 
 4. **Simplicity.** I subscribe to the [Earl Muntz](https://en.wikipedia.org/wiki/Muntzing) philosophy. As such, the `TI CUBE` design uses the minimum required amount of components to accomplish its function. Random logic (i.e., TTL gates and decoders) is complex and consumes significant board space. Instead, I prefer to use simple and standard PLD devices like the ubiquitous 16V8, which does everything needed in one chip. This also allows easily reconfigurability simply by reprogramming the PLD. There are  no address or data buffers in the `TI CUBE`, but the small size combined with the use of four-layer PCBs keeps the digital signals clean; my builds have demonstrated excellent reliablity and performance. 
 
-5. **Period correctness.** Primarily this means use of only through-hole components (no surface mount). I've violated this rule in number of other places (e.g., use of PLDs instead of random logic, larger memory ICs compared to what was available in the 70s and early 80s), so this one is more a guideline than a rule. 😉
+5. **Period correctness.** Primarily this means use of only through-hole components (no surface mount). I've violated this rule in number of other places (e.g., use of PLDs instead of random logic, larger memory ICs compared to what was available in the 70s and early 80s), so this one is more a [guideline than an actual rule](https://www.youtube.com/watch?v=omjnIeLIzJc&t=13s). 😉
    
 6. **Compatibility.** I designed the `TI CUBE` to be compatible with other TMS9900-based systems. One popular example is [Stuart Connor's TMS9900 breadboard/PCB system](http://www.stuartconner.me.uk/tms9900_breadboard/tms9900_breadboard.htm). In fact, the binary files he provides can be downloaded, burned to EPROMs, and used directly in the `TI CUBE`. 
 
@@ -69,6 +69,7 @@ The following principles guided my development of this homebrew project. The lis
 [^1]: A 48 MHz crystal is required for the TIM9904 and a 12 MHz crystal is required for the TIM9904A(NL). The LC tank circuit values must also be adjusted as per the notes on the CPU board schematic.
 
 [^2]: The RAM and ROM sizes can be adjusted in any combination that fits within the 64KB address space simply by adjusting the logic for the chip enable outputs in the PLD program.
+
 
 
 
