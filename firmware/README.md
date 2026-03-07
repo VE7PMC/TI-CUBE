@@ -1,6 +1,6 @@
 # Firmware for the `TI CUBE`
 
-These files can be burnt into two EPROMs (must be at least 32 KB each). One file is for the [even/MSB EPROM](firmware/even_msb.bin) and the other is for the [odd/LSB EPROM](firmware/odd_lsb.bin) (labeled on the memory card).
+These files can be burnt into two EPROMs (must be at least 32 KB each). One file is for the [even/MSB EPROM](even_msb.bin) and the other is for the [odd/LSB EPROM](odd_lsb.bin) (labeled on the memory card).
 
 These files are direct copies from Stuart Conner's [TMS 9900 breadboard system](http://www.stuartconner.me.uk/tms9900_breadboard/tms9900_breadboard.htm) page. **All rights and credit go to him.**
 
