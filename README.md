@@ -6,7 +6,7 @@ The `TI CUBE` is a homebrew microcomputer I designed based on the Texas Instrume
 
 In its basic form the `TI CUBE` supports serial communications, 32KB of RAM and 32KB of ROM.
 
-## Why the TMS9900?
+## Why the TMS 9900?
 
 The [TMS 9900 microprocessor](https://en.wikipedia.org/wiki/TMS9900) was relatively advanced for its time (released in 1976) and is essentially a single-chip version of TI's 990 series of 16-bit minicomputers from the 1970s. The TMS 9900 is considered one of the first true 16-bit microprocessors with a full 16-bit external data bus. This was allowed by the use of rather unconventional 64-pin DIP package. The address bus uses 15 bits, but since all memory accesses are 16-bits wide, this provides a 64KB address space (32K of 16 bit words). The most unique feature of the TMS 9900 is that it had no internal registers, other than PC (program counter), WP (workspace pointer), and status register (SR) - all 16-bits wide. Instead of internal registers, the WP pointed to a region in external memory where 16 "registers" were stored in sequential memory addresses. Adjusting the WP allowed for very fast context switching by pointing to a different set of "registers". This capability was used in TI 990 minicomputers to support multiuser computing.
 
