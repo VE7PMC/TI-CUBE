@@ -31,7 +31,7 @@ The following principles guided my development of this homebrew project. The lis
 
 5. **Period correctness.** Primarily this means use of only through-hole components (no surface mount). I've violated this rule in number of other places (e.g., use of PLDs instead of random logic, larger memory ICs compared to what was available in the 70s and early 80s), so this one is more a [guideline than an actual rule](https://www.youtube.com/watch?v=omjnIeLIzJc&t=13s). 😉
    
-6. **Compatibility.** I designed the `TI CUBE` to be compatible with other TMS 9900-based systems. One popular example is [Stuart Connor's TMS9900 breadboard/PCB system](http://www.stuartconner.me.uk/tms9900_breadboard/tms9900_breadboard.htm). In fact, the binary files he provides can be downloaded, burned to EPROMs, and used directly in the `TI CUBE`. 
+6. **Compatibility.** I designed the `TI CUBE` to be compatible with other TMS 9900-based systems. One popular example is [Stuart Connor's TMS 9900 breadboard/PCB system](http://www.stuartconner.me.uk/tms9900_breadboard/tms9900_breadboard.htm). In fact, the binary files he provides can be downloaded, burned to EPROMs, and used directly in the `TI CUBE`. 
 
 ## Specifications
 
