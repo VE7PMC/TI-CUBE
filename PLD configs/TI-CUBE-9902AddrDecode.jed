@@ -1,7 +1,7 @@
 
 CUPL(WM)        5.0a  Serial# MW-10400000
 Device          g16v8s  Library DLIB-h-40-9
-Created         Tue Feb 17 19:04:53 2026
+Created         Sun Apr 05 16:07:05 2026
 Name            TI CUBE TMS9902 ACC Address Decoder
 Partno          ATF16V8 20-DIP
 Revision        01
@@ -26,4 +26,4 @@ Location        U1 and U2
 *L02144 11111111111111111111111111111111
 *L02176 111111111111111110
 *C1B4C
-*B23D
+*B255
