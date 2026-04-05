@@ -70,15 +70,6 @@ The `TI CUBE` memory board decodes the entire address space of the TMS 9900 but 
 ## Floppy and/or Hard Drive Controller
 The next step after the memory expansion described above would be to add non-volatile storage using using a floppy or hard-drive controller. This would also be necessary to support booting the MDEX/Unix systems described above.
 
-# Notes
-
-[^1]: Overclocking to 4 MHz is possible if a TMS 9900-40 CPU is used and the appropriate clock component changes are made.
-
-[^2]: Depending on whether the TIM 9904 or TIM 9904A is used, and which CPU frequency is desired (12 or 16 MHz) different components must be selected for the clock crystal and tank circuit. A table of values is provided in the CPU schematic.
-
-[^3]: The RAM and ROM sizes can be adjusted in any combination that fits within the 64KB address space simply by adjusting the logic for the chip enable outputs in the PLD program.
-
-[^4]: The use of PLDs does mean that you need a programmer (such as the [XGecu TL866II Plus](http://autoelectric.cn/EN/TL866_main.html), or similar). What, you don't have one? Then get one - they're super handy for retrocomputing.
 
 
 
