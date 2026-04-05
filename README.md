@@ -18,7 +18,7 @@ Finally, the project was greatly inspired by [Usagi Electric](https://www.youtub
 
 The following principles guided my development of this homebrew project. The list is roughly in order of priority (highest is first).
 
-1. **No 8-bit data buses!** The TMS 9900 microprocessor is fundamentally a 16-bit design descendent from TI's 990 series of 16-bit minicomputers and I wanted to honour this ancestry as much as possible. I find address/data bus muxing/demuxing unsightly, complex, and inelegant. Yes, the TMS 9900 isn't the fastest of the TMS 99XX series of microprocessors, but it's the only one that supports an *external* 16-bit data bus interface.
+1. **No 8-bit data buses!** The TMS 9900 microprocessor is fundamentally a 16-bit design descendent from TI's 990 series of 16-bit minicomputers and I wanted to honour this ancestry as much as possible. I find address/data bus muxing/demuxing unsightly, complex, and inelegant. Yes, the TMS 9900 isn't the fastest of the TMS 99xx series of microprocessors, but it's the only one that supports an *external* 16-bit data bus interface.
 
 2. **Modularity.** Just like a minicomputer which would typically have a backplane populated with multiple cards, the `TI CUBE` uses a similar philosophy with three basic cards: 
    * CPU card (with clock and interrupt control)
@@ -32,8 +32,10 @@ The following principles guided my development of this homebrew project. The lis
 4. **Simplicity.** I subscribe to the [Earl Muntz](https://en.wikipedia.org/wiki/Muntzing) philosophy. As such, the `TI CUBE` design uses the minimum required amount of components to accomplish its function. Random logic (i.e., TTL gates and decoders) is complex and consumes significant board space. Instead, I prefer to use simple and standard PLD devices like the ubiquitous 16V8, which does everything needed in one chip.[^4] This also allows easily reconfigurability simply by reprogramming the PLD. There are  no address or data buffers in the `TI CUBE`, but the small size combined with the use of four-layer PCBs keeps the digital signals clean; my builds have demonstrated excellent reliablity and performance. 
 
 5. **Period correctness.** Primarily this means use of only through-hole components (no surface mount). I don't mind SMD as such, but through-hole is still easier to assemble and is more typical of 70s/80s computers. I have violated the period-correctness rule in number of other places (e.g., use of PLDs instead of random logic, larger memory ICs compared to what was available in the 70s and early 80s), so this one is more a [guideline than an actual rule](https://www.youtube.com/watch?v=omjnIeLIzJc&t=13s). 😉
+
+6. **Use of TMS 99xx peripherals.** The TMS 9900 has a unique serial-oriented I/O bus (the "CRU" - communications register unit). While there is a plethora of external I/O devices that could be memory mapped, I wanted the `TI CUBE` to remain consistent with the TMS 9900 ecosystem through the used of CRU-based I/O devices. Currently, this includes the TMS 9901 programmable systems interface (PSI) and the TMS 9902 asynchronous communications controller (ACC). 
    
-8. **Compatibility.** I designed the `TI CUBE` to be generally compatible with other TMS 9900-based systems. One example is [Stuart Connor's TMS 9900 breadboard/PCB system](http://www.stuartconner.me.uk/tms9900_breadboard/tms9900_breadboard.htm). In fact, the binary files he provides can be downloaded, burned to EPROMs, and used directly in the `TI CUBE`. This includes the TIBUG monitor and Cortex BASIC which work right out of the box!
+7. **Compatibility.** I designed the `TI CUBE` to be generally compatible with other TMS 9900-based systems. One example is [Stuart Connor's TMS 9900 breadboard/PCB system](http://www.stuartconner.me.uk/tms9900_breadboard/tms9900_breadboard.htm). In fact, the binary files he provides can be downloaded, burned to EPROMs, and used directly in the `TI CUBE`. This includes the TIBUG monitor and Cortex BASIC which work right out of the box!
 
 # Hardware Specifications
 
@@ -69,13 +71,27 @@ The following principles guided my development of this homebrew project. The lis
 # Future Expansion/Ideas
 
 ## External Instructions
-The TMS 9900 has an interesting feature where a handful of instructions can be decoded external and used to trigger various hardware functions. These instructions are:
+The TMS 9900 has an interesting feature where a handful of instructions can be decoded externally and used to trigger various hardware functions. These instructions are:
+| Mnemonic  | A0 | A1 | A2 | A3-A14 |
+| ---- | - | - | - | ---------- |
+| RSET | 0 | 1 | 1 | Don't care |
+| IDLE | 0 | 1 | 0 | Don't care |
+| CKON | 1 | 0 | 1 | Don't care |
+| CKOF | 1 | 1 | 0 | Don't care |
+| LREX | 1 | 1 | 1 | Don't care |
+| CRU operations | 0 | 0 | 0 | From R12 |
 
+These five instructions implemented various hardware extensions in the TI 990 series of minicomputers. For the `TI CUBE` RSET could be decoded and used to trigger an external hardware reset. The IDLE instruction is typically used by the operating system to pause procesing of instructions while waiting for an external interrupt (I/O or timer). On TI 990 minicomputers this instruction was decoded to drive the front panel "IDLE" LED.
+
+The CKOF/CKOF instructions are used for various implementation-specific functions (some microcomputers used these for enabling/disabling the memory mapper function). The LREX (Load and Restart Execution) instruction was used in some hardware to implement a single-step function.
+
+All of the above could be added to the `TI CUBE` by decoding the appropriate address lines (A0, A1 and A2) along the the CRUCLK signal using the existing 16V8 PLDs (or additional devices).
 
 ## RAM Memory Expansion
-The base system memory board decodes the entire address space of the TMS 9900, but this is a maximum of 65536 bytes (64 kiB). A number of other computers based on the TMS 9900 (e.g., Cortex and the TI 990/10 and 990/12) used memory mappers to expand the memory space up to 1 MiB or more of RAM. The primary advantage of this expansion is that would allow running either [MDEX](http://www.stuartconner.me.uk/mini_cortex/mini_cortex.htm#using_mdex) or [Unix](http://www.stuartconner.me.uk/mini_cortex/mini_cortex.htm#using_unix), both courtesy of Stuart Conner. I'd really like to try this as it might allow a rudimentary mulituser system when equipped with multiple additional serial cards. 
+The `TI CUBE` memory board decodes the entire address space of the TMS 9900 but this is a maximum of 65536 bytes (64 kiB). A number of other computers based on the TMS 9900 (e.g., Cortex and the TI 990/10 and 990/12) used memory mappers to expand the memory space up to 1 MiB or more of RAM via paging. The primary advantage of this expansion is that would allow running either [MDEX](http://www.stuartconner.me.uk/mini_cortex/mini_cortex.htm#using_mdex) or [Unix](http://www.stuartconner.me.uk/mini_cortex/mini_cortex.htm#using_unix), both courtesy of Stuart Conner who ported them for his Mini-Cortext project. I'd really like to try Unix on the `TI CUBE` as it might allow a rudimentary mulituser system to be constructed (when equipped with multiple additional serial cards). 
 
 ## Floppy and/or Hard Drive Controller
+The next step after the memory expansion described above would be to add non-volatile storage using using a floppy or hard-drive controller. This would also be necessary to support booting the MDEX/Unix systems described above.
 
 # Notes
 
