@@ -71,6 +71,8 @@ The following principles guided my development of this homebrew project. The lis
 -  1x 72-pin header pin connector for daisy chaining multiple backplanes
 -  2x red LEDs for +5V and +12 power supply indication
 -  1x 4-pin Berg connector for +5V and +12V power supplies (compatible with a standard 3.5 in floppy power connector)
+-  1x 2-pin 0.1 in. header connector for external RESET input (optional)
+-  1x 2-pin 0.1 in. header connector for external LOAD input (optional)
 
 # Future Expansion/Ideas
 
