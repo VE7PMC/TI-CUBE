@@ -49,7 +49,6 @@ This [file](HARDWARE.md) contains a description of the `TI CUBE` hardware design
 
 This [file](FUTURE.md) contains my current thoughts on future expansions and/or design modifications.
 
-# Notes
 [^1]: The use of PLDs does mean that you need a programmer (such as the [XGecu TL866II Plus](http://autoelectric.cn/EN/TL866_main.html), or similar). What, you don't have one? Then get one - they're super handy for retrocomputing.
 
 
