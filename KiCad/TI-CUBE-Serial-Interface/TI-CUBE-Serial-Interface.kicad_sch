@@ -5,6 +5,7 @@
 	(uuid "01c40acd-8850-474b-b62f-af344104c8bf")
 	(paper "B")
 	(title_block
+		(title "TI CUBE Serial Interface Board")
 		(rev "1.1")
 	)
 	(lib_symbols
@@ -5589,7 +5590,7 @@
 		)
 	)
 	(circle
-		(center 372.364 70.358)
+		(center 337.566 51.308)
 		(radius 0.568)
 		(stroke
 			(width 0)
@@ -5625,7 +5626,7 @@
 	)
 	(text "JUMPERED ON PCB"
 		(exclude_from_sim no)
-		(at 374.65 69.596 90)
+		(at 339.852 50.546 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5702,7 +5703,7 @@
 	)
 	(text "EIA-232C Pinout (AT/Everex standard)"
 		(exclude_from_sim no)
-		(at 352.806 55.118 0)
+		(at 318.008 36.068 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5756,9 +5757,9 @@
 		)
 		(uuid "fe1b951f-000d-4490-a7d5-b672bac267c3")
 	)
-	(text_box "NOTE: RTS/CTS MUST be jumpered \n(or hardware flow control used) \nfor the TMS9902 to transmit."
+	(text_box "NOTE: RTS/CTS MUST be jumpered \n(or hardware flow control used) \nto allow the TMS 9902 to transmit."
 		(exclude_from_sim no)
-		(at 332.74 85.852 0)
+		(at 297.942 66.802 0)
 		(size 40.894 6.604)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -8113,7 +8114,7 @@
 	)
 	(polyline
 		(pts
-			(xy 372.364 62.738) (xy 372.364 70.358)
+			(xy 337.566 43.688) (xy 337.566 51.308)
 		)
 		(stroke
 			(width 0)
@@ -8603,7 +8604,7 @@
 	)
 	(polyline
 		(pts
-			(xy 372.364 70.358) (xy 372.364 75.438)
+			(xy 337.566 51.308) (xy 337.566 56.388)
 		)
 		(stroke
 			(width 0)
@@ -8913,7 +8914,7 @@
 	)
 	(polyline
 		(pts
-			(xy 370.332 75.438) (xy 372.364 75.438)
+			(xy 335.534 56.388) (xy 337.566 56.388)
 		)
 		(stroke
 			(width 0)
@@ -9513,7 +9514,7 @@
 	)
 	(polyline
 		(pts
-			(xy 370.332 70.358) (xy 372.364 70.358)
+			(xy 335.534 51.308) (xy 337.566 51.308)
 		)
 		(stroke
 			(width 0)
@@ -10093,7 +10094,7 @@
 	)
 	(polyline
 		(pts
-			(xy 370.332 62.738) (xy 372.364 62.738)
+			(xy 335.534 43.688) (xy 337.566 43.688)
 		)
 		(stroke
 			(width 0)
@@ -10343,7 +10344,7 @@
 		(cells
 			(table_cell "J6/J7 Pin"
 				(exclude_from_sim no)
-				(at 336.042 57.404 0)
+				(at 301.244 38.354 0)
 				(size 12.192 4.064)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -10361,7 +10362,7 @@
 			)
 			(table_cell "DE-9 Pin"
 				(exclude_from_sim no)
-				(at 348.234 57.404 0)
+				(at 313.436 38.354 0)
 				(size 11.43 4.064)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -10379,7 +10380,7 @@
 			)
 			(table_cell "Function"
 				(exclude_from_sim no)
-				(at 359.664 57.404 0)
+				(at 324.866 38.354 0)
 				(size 10.668 4.064)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -10397,7 +10398,7 @@
 			)
 			(table_cell "1"
 				(exclude_from_sim no)
-				(at 336.042 61.468 0)
+				(at 301.244 42.418 0)
 				(size 12.192 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -10413,7 +10414,7 @@
 			)
 			(table_cell "1"
 				(exclude_from_sim no)
-				(at 348.234 61.468 0)
+				(at 313.436 42.418 0)
 				(size 11.43 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -10429,7 +10430,7 @@
 			)
 			(table_cell "DCD"
 				(exclude_from_sim no)
-				(at 359.664 61.468 0)
+				(at 324.866 42.418 0)
 				(size 10.668 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -10445,7 +10446,7 @@
 			)
 			(table_cell "2"
 				(exclude_from_sim no)
-				(at 336.042 64.008 0)
+				(at 301.244 44.958 0)
 				(size 12.192 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -10461,7 +10462,7 @@
 			)
 			(table_cell "2"
 				(exclude_from_sim no)
-				(at 348.234 64.008 0)
+				(at 313.436 44.958 0)
 				(size 11.43 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -10477,7 +10478,7 @@
 			)
 			(table_cell "RXD"
 				(exclude_from_sim no)
-				(at 359.664 64.008 0)
+				(at 324.866 44.958 0)
 				(size 10.668 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -10493,7 +10494,7 @@
 			)
 			(table_cell "3"
 				(exclude_from_sim no)
-				(at 336.042 66.548 0)
+				(at 301.244 47.498 0)
 				(size 12.192 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -10509,7 +10510,7 @@
 			)
 			(table_cell "3"
 				(exclude_from_sim no)
-				(at 348.234 66.548 0)
+				(at 313.436 47.498 0)
 				(size 11.43 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -10525,7 +10526,7 @@
 			)
 			(table_cell "TXD"
 				(exclude_from_sim no)
-				(at 359.664 66.548 0)
+				(at 324.866 47.498 0)
 				(size 10.668 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -10541,7 +10542,7 @@
 			)
 			(table_cell "4"
 				(exclude_from_sim no)
-				(at 336.042 69.088 0)
+				(at 301.244 50.038 0)
 				(size 12.192 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -10557,7 +10558,7 @@
 			)
 			(table_cell "4"
 				(exclude_from_sim no)
-				(at 348.234 69.088 0)
+				(at 313.436 50.038 0)
 				(size 11.43 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -10573,7 +10574,7 @@
 			)
 			(table_cell "DTR"
 				(exclude_from_sim no)
-				(at 359.664 69.088 0)
+				(at 324.866 50.038 0)
 				(size 10.668 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -10589,7 +10590,7 @@
 			)
 			(table_cell "5"
 				(exclude_from_sim no)
-				(at 336.042 71.628 0)
+				(at 301.244 52.578 0)
 				(size 12.192 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -10605,7 +10606,7 @@
 			)
 			(table_cell "5"
 				(exclude_from_sim no)
-				(at 348.234 71.628 0)
+				(at 313.436 52.578 0)
 				(size 11.43 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -10621,7 +10622,7 @@
 			)
 			(table_cell "GND"
 				(exclude_from_sim no)
-				(at 359.664 71.628 0)
+				(at 324.866 52.578 0)
 				(size 10.668 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -10637,7 +10638,7 @@
 			)
 			(table_cell "6"
 				(exclude_from_sim no)
-				(at 336.042 74.168 0)
+				(at 301.244 55.118 0)
 				(size 12.192 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -10653,7 +10654,7 @@
 			)
 			(table_cell "6"
 				(exclude_from_sim no)
-				(at 348.234 74.168 0)
+				(at 313.436 55.118 0)
 				(size 11.43 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -10669,7 +10670,7 @@
 			)
 			(table_cell "DSR"
 				(exclude_from_sim no)
-				(at 359.664 74.168 0)
+				(at 324.866 55.118 0)
 				(size 10.668 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -10685,7 +10686,7 @@
 			)
 			(table_cell "7"
 				(exclude_from_sim no)
-				(at 336.042 76.708 0)
+				(at 301.244 57.658 0)
 				(size 12.192 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -10701,7 +10702,7 @@
 			)
 			(table_cell "7"
 				(exclude_from_sim no)
-				(at 348.234 76.708 0)
+				(at 313.436 57.658 0)
 				(size 11.43 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -10717,7 +10718,7 @@
 			)
 			(table_cell "RTS"
 				(exclude_from_sim no)
-				(at 359.664 76.708 0)
+				(at 324.866 57.658 0)
 				(size 10.668 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -10733,7 +10734,7 @@
 			)
 			(table_cell "8"
 				(exclude_from_sim no)
-				(at 336.042 79.248 0)
+				(at 301.244 60.198 0)
 				(size 12.192 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -10749,7 +10750,7 @@
 			)
 			(table_cell "8"
 				(exclude_from_sim no)
-				(at 348.234 79.248 0)
+				(at 313.436 60.198 0)
 				(size 11.43 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -10765,7 +10766,7 @@
 			)
 			(table_cell "CTS"
 				(exclude_from_sim no)
-				(at 359.664 79.248 0)
+				(at 324.866 60.198 0)
 				(size 10.668 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -10781,7 +10782,7 @@
 			)
 			(table_cell "9"
 				(exclude_from_sim no)
-				(at 336.042 81.788 0)
+				(at 301.244 62.738 0)
 				(size 12.192 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -10797,7 +10798,7 @@
 			)
 			(table_cell "9"
 				(exclude_from_sim no)
-				(at 348.234 81.788 0)
+				(at 313.436 62.738 0)
 				(size 11.43 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -10813,7 +10814,7 @@
 			)
 			(table_cell "RI"
 				(exclude_from_sim no)
-				(at 359.664 81.788 0)
+				(at 324.866 62.738 0)
 				(size 10.668 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
