@@ -4,6 +4,10 @@
 	(generator_version "9.0")
 	(uuid "01c40acd-8850-474b-b62f-af344104c8bf")
 	(paper "B")
+	(title_block
+		(title "TI CUBE Backplane")
+		(rev "1.1")
+	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
 			(pin_numbers
@@ -102,6 +106,148 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Connector_Generic:Conn_01x02"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3334,6 +3480,28 @@
 		)
 		(uuid "39b2f1ef-354f-40a6-99d9-7edbf1dfc3bc")
 	)
+	(text "External LOAD Switch (optional)"
+		(exclude_from_sim no)
+		(at 83.82 223.774 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "92b3a160-6d66-4463-a11f-e5c80038ad58")
+	)
+	(text "External RESET Switch (optional)"
+		(exclude_from_sim no)
+		(at 83.82 208.534 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d69d6f08-abad-4989-b8df-c16a95b526bd")
+	)
 	(junction
 		(at 171.45 207.01)
 		(diameter 0)
@@ -3597,6 +3765,16 @@
 			(type default)
 		)
 		(uuid "09b4e29b-86b4-498a-bcdf-d9073544529f")
+	)
+	(wire
+		(pts
+			(xy 91.44 207.01) (xy 104.14 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09db7ee3-7b63-4ce8-bcc9-84152f96b7d4")
 	)
 	(wire
 		(pts
@@ -5147,6 +5325,16 @@
 			(type default)
 		)
 		(uuid "6941e373-5ca3-4f4d-8304-e16112e9880c")
+	)
+	(wire
+		(pts
+			(xy 91.44 222.25) (xy 104.14 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "694b9504-f0c6-4d13-83af-75f7a54b9515")
 	)
 	(wire
 		(pts
@@ -8627,6 +8815,16 @@
 		)
 		(uuid "2d219a4e-144a-4922-8ad5-63fd11c4141f")
 	)
+	(label "~{LOAD}"
+		(at 104.14 222.25 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2d791114-c6b8-494f-ad96-25bcdd1db059")
+	)
 	(label "D14"
 		(at 124.46 105.41 0)
 		(effects
@@ -8986,6 +9184,16 @@
 			(justify left bottom)
 		)
 		(uuid "4a55d8c2-76e7-4075-b81b-d887e02d085a")
+	)
+	(label "~{RESET_IN}"
+		(at 104.14 207.01 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4abafaab-efed-426c-b963-6b22c6464fe0")
 	)
 	(label "D4"
 		(at 337.82 118.11 0)
@@ -12954,6 +13162,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 91.44 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1d29dabb-2e1d-4cc9-99bb-60bbc3cb8e37")
+		(property "Reference" "#PWR067"
+			(at 91.44 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 91.44 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.44 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 91.44 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1acb5cc7-8555-4300-8058-27d8ccbbd6e5")
+		)
+		(instances
+			(project "TI-CUBE-Backplane"
+				(path "/01c40acd-8850-474b-b62f-af344104c8bf"
+					(reference "#PWR067")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 102.87 82.55 270)
 		(mirror x)
@@ -13148,6 +13423,73 @@
 			(project "TI-CUBE-Backplane"
 				(path "/01c40acd-8850-474b-b62f-af344104c8bf"
 					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 91.44 224.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "22b52433-162a-44d8-8141-9a9e46d3a0c4")
+		(property "Reference" "#PWR068"
+			(at 91.44 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 91.44 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.44 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 91.44 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "67fb2685-bd67-44a3-acbc-851afd98d2a7")
+		)
+		(instances
+			(project "TI-CUBE-Backplane"
+				(path "/01c40acd-8850-474b-b62f-af344104c8bf"
+					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -16225,7 +16567,7 @@
 				)
 			)
 		)
-		(property "Value" "Power"
+		(property "Value" "4-pin Berg"
 			(at 165.1 200.66 0)
 			(effects
 				(font
@@ -16544,6 +16886,75 @@
 			(project "TI-CUBE-Backplane"
 				(path "/01c40acd-8850-474b-b62f-af344104c8bf"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 86.36 207.01 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a3ab174d-c054-4a16-8886-82f3b4b15f9f")
+		(property "Reference" "J2"
+			(at 86.36 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 86.36 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 86.36 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 86.36 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 86.36 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ef90f45b-761d-4307-8cb7-c95a3a2a2812")
+		)
+		(pin "2"
+			(uuid "32354b98-f90e-45e3-9856-0f17df293e0c")
+		)
+		(instances
+			(project ""
+				(path "/01c40acd-8850-474b-b62f-af344104c8bf"
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -18289,6 +18700,75 @@
 			(project "TI-CUBE-Backplane"
 				(path "/01c40acd-8850-474b-b62f-af344104c8bf"
 					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 86.36 222.25 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f101503c-34c0-4e65-b119-15fb43b14af7")
+		(property "Reference" "J3"
+			(at 86.36 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 86.36 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 86.36 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 86.36 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 86.36 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "da20265a-b76c-4034-b1f5-898c40729755")
+		)
+		(pin "1"
+			(uuid "37d0d9a3-6f03-4fd5-aff1-1d2c635ea458")
+		)
+		(instances
+			(project ""
+				(path "/01c40acd-8850-474b-b62f-af344104c8bf"
+					(reference "J3")
 					(unit 1)
 				)
 			)
