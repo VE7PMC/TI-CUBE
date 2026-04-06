@@ -30,6 +30,8 @@
 -  1x 4-pin Berg connector for +5V and +12V power supplies (compatible with a standard 3.5 in floppy power connector)
 -  1x 2-pin 0.1 in. header connector for external RESET input (optional)
 -  1x 2-pin 0.1 in. header connector for external LOAD input (optional)
+-  The expansion connectors (particularly the pin header connector) can also be used to [access the bus signals for debugging (via a scope or logic analyzer)](images/Debugging.jpg).
+-  Two spare bus lines (USER1 and USER2) are provided to carry user-defined signals between cards.
 
 # Notes
 [^1]: Overclocking to 4 MHz is possible if a TMS 9900-40 CPU is used and the appropriate clock component changes are made.
