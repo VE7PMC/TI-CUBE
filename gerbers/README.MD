@@ -4,9 +4,9 @@ These .zip files contain pre-generated PCB files for each of the `TI CUBE` board
 # Instructions
 
 Simply upload the appropriate Gerber .zip file to your PCB manufacturer website. It should automatically decode the contents and display something like the following:
-![CPU board settings 1](images/JLCPCB-1.jpg)
+![CPU board settings 1](../images/JLCPCB-1.jpg)
 
 All other settings can be left at the default as shown below.
-![CPU board settings 2](images/JLCPCB-2.jpg)
-![CPU board settings 3](images/JLCPCB-3.jpg)
+![CPU board settings 2](../images/JLCPCB-2.jpg)
+![CPU board settings 3](../images/JLCPCB-3.jpg)
 
