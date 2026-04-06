@@ -1,12 +1,12 @@
 # Description
 
-This folder contains files for programming the various programmable logic devices (PLDs) that are used for decoding addresses.
+This folder contains files for programming the various [programmable logic devices (PLDs)](https://en.wikipedia.org/wiki/Programmable_logic_device) that are used for decoding memory and CRU addresses. These devices are used in place of the typical TTL gates and decoders that are used to generate the appropriate chip enable signals from various address line combinations.
 
 # File Formats
 
 The .pld files are in [WINCUPL II format](https://www.microchip.com/en-us/development-tool/wincupl). 
 
-The .jed files are pre-generated JEDEC programming files that are almost all device programmers.
+The .jed files are pre-generated JEDEC programming files that are almost all device programmers. In my case, I use the [XGecu II+ programmer](http://autoelectric.cn/EN/TL866_main.html) which be sourced from the usual online sources (e.g., Amazon, AliExpress, eBay, etc.).
 
 # PLD Configuration Files
 
