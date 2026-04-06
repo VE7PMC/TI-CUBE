@@ -31,7 +31,7 @@ The following principles guided my development of this homebrew project. The lis
 
    Interestingly, these dimensions are similar to those used by [CubeSat](https://en.wikipedia.org/wiki/CubeSat) modules. Perhaps a `TI CUBE` will someday get launched into orbit as the most underpowered satellite ever.
 
-5. **Simplicity.** I subscribe to the [Earl Muntz](https://en.wikipedia.org/wiki/Muntzing) philosophy. As such, the `TI CUBE` design uses the minimum required amount of components to accomplish its function. Random logic (i.e., TTL gates and decoders) is complex and consumes significant board space. Instead, I prefer to use simple and standard PLD devices like the ubiquitous 16V8, which does everything needed in one chip.[^1] This also allows easily reconfigurability simply by reprogramming the PLD.
+5. **Simplicity.** I subscribe to the [Earl Muntz](https://en.wikipedia.org/wiki/Muntzing) philosophy. As such, the `TI CUBE` design uses the minimum required amount of components to accomplish its function. Random logic (i.e., TTL gates and decoders) is complex and consumes significant board space. Instead, I prefer to use simple and standard PLD devices like the ubiquitous 16V8, which does everything needed in one chip. This also allows easily reconfigurability simply by reprogramming the PLD.
 
    There are  no address or data buffers in the `TI CUBE`, but the small size combined with the use of four-layer PCBs keeps the digital signals clean; my builds have demonstrated excellent reliablity and performance. 
 
@@ -49,8 +49,18 @@ This [file](HARDWARE.md) contains a description of the `TI CUBE` hardware design
 
 This [file](FUTURE.md) contains my current thoughts on future expansions and/or design modifications.
 
-[^1]: The use of PLDs does mean that you need a programmer (such as the [XGecu TL866II Plus](http://autoelectric.cn/EN/TL866_main.html), or similar). What, you don't have one? Then get one - they're super handy for retrocomputing.
+# References
 
+* [TI 9900 Family Systems Design and Data Book](https://www.bitsavers.org/components/ti/TMS9900/1978_TI_9900_Family_Systems_Design_and_Data_Book_1ed.pdf)
+* [TMS 9900 Microprocessor Data Manual](https://datasheets.chipdb.org/TI/9900/TMS9900_DataManual.pdf)
+* [The TI-99/4A Tech Pages](https://www.unige.ch/medecine/nouspikel/ti99/titechpages.htm)
+* [TI TMS9900/SBP9900: Accidental Success](https://www.cpushack.com/2015/02/05/ti-tms9900sbp9900-accidental-success/)
+* [The Inside Story of Texas Instruments’ Biggest Blunder: The TMS9900 Microprocessor](https://spectrum.ieee.org/the-inside-story-of-texas-instruments-biggest-blunder-the-tms9900-microprocessor)
 
+# Acknowledgements
 
+The following are excellent resources from other experimenters with the TMS 9900:
+
+* [Stuart Conner's Home Page](http://www.stuartconner.me.uk/) contains very helpful hardware designs and software files which I have referenced in the `TI CUBE` design.
+* [POWERTRAN Cortex](http://powertrancortex.com/index.html) contains source code for Cortex BASIC which can be modified to run on the `TI CUBE`.
 
