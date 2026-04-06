@@ -25,7 +25,7 @@ The following principles guided my development of this homebrew project. The lis
    * Memory card (holding the RAM and ROM)
    * Serial port interface card (equipped with two serial chips driving two EIA-232C compatible ports). 
   
-   All cards plug into a backplane using 72-pin header connectors. Any card can go in any slot, and multiple cards (e.g., multiple seial interface cards) are supported. Additional backplanes can also be daisy-chained to support additional card slots. The expansion connectors (especially the pin header connector) also makes for [handy connections to bus signals for debugging (via a scope or logic analyzer)](images/Debugging.jpg). Two spare bus lines (USER1 and USER2) are provided to carry user-defined signals between cards.
+   All cards plug into a backplane using 72-pin header connectors. Any card can go in any slot, and multiple cards (e.g., multiple serial interface cards) are supported. Additional backplanes can also be daisy-chained to support additional card slots.
 
 3. **Board size.** Constraining the board size to 100 x 100 mm (4 x 4 in) allows ordering PCBs using the [JLCPCB](https://jlcpcb.com) or [PCBWAY](https://pcbway.com) prototyping services (personally, I have had great experience with JLCPCB). This significantly reduces the cost of individual boards (approximately $2 per board). The physical construction also gives the `TI CUBE` its name: four 100 x 100 mm vertical cards plugged into a horizontal four-slot 100 x 100 mm backplane.
 
