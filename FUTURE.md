@@ -24,3 +24,7 @@ The `TI CUBE` memory board decodes the entire address space of the TMS 9900 but 
 
 ## Floppy and/or Hard Drive Controller
 The next step after the memory expansion described above would be to add non-volatile storage using using a floppy or hard-drive controller. This would also be necessary to support booting the MDEX/Unix systems described above.
+
+## Can it run Doom?
+
+The short answer is "no, not even close." I'm working on an idea for a longer answer that starts with "yes, but...".
