@@ -33,6 +33,10 @@
 -  The expansion connectors (particularly the pin header connector) can also be used to [access the bus signals for debugging (via a scope or logic analyzer)](images/Debugging.jpg).
 -  Two spare bus lines (USER1 and USER2) are provided to carry user-defined signals between cards.
 
+# Component Ordering Information
+
+A [Bill of Materials](Bill%20of%20Materials.xlsx) is provided in Excel format. Note that the TI and memory components are no longer manufactured, so these will have to be acquired from alternate sources (e.g., eBay). These are noted in the spreadsheet. The remaining components can be purchased online from one of the many electronics vendor sites (e.g., DigiKey, Mouser, Amazon, AliExpress, etc.). I prefer to purchase from DigiKey as there are no worries about marginal or counterfeit parts. A [DigiKey parts list](DigiKey%20Parts%20List.xlsx) is also provide in Excel format; this can be directly uploaded to DigiKey website to create an order. As of April 2026 the cost of parts (excluding the items not currently manufactured) is approximately $60 USD. 
+
 [^1]: Overclocking to 4 MHz is possible if a TMS 9900-40 CPU is used and the appropriate clock component changes are made.
 
 [^2]: Depending on whether the TIM 9904 or TIM 9904A is used, and which CPU frequency is desired (12 or 16 MHz) different components must be selected for the clock crystal and tank circuit. A table of values is provided in the CPU schematic.
