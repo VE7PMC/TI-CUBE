@@ -43,7 +43,7 @@ The following principles guided my development of this homebrew project. The lis
 
 # Hardware Specifications
 
-This [file](HARDWARE.md) contains a description of the `TI CUBE` hardware design.
+This [file](hardware/README.md) contains a description of the `TI CUBE` hardware design.
 
 # Future Expansion/Ideas
 
