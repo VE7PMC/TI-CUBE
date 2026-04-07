@@ -1,6 +1,6 @@
 # The TI CUBE
 
-The `TI CUBE` is a homebrew microcomputer I designed around the Texas Instruments TMS 9900 microprocessor and its associated peripheral devices.
+The `TI CUBE` is an open-source homebrew microcomputer project I designed around the Texas Instruments TMS 9900 microprocessor and its associated peripheral devices.
 
 <img alt="Photo of the complete TI CUBE assembly" src="./images/Complete.jpg" />
 
