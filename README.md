@@ -45,6 +45,8 @@ The following principles guided my development of this homebrew project. The lis
 
 This [file](HARDWARE.md) contains a description of the `TI CUBE` hardware design.
 
+A [Bill of Materials](hardware/Bill%20of%20Materials.xlsx) is provided in Excel format. Note that the TI and memory components are no longer manufactured, so these will have to be acquired from alternate sources (e.g., eBay). These are noted in the spreadsheet. The remaining components can be purchased online from one of the many electronics vendor sites (e.g., DigiKey, Mouser, Amazon, AliExpress, etc.). I prefer to purchase from DigiKey as there are no worries about marginal or counterfeit parts. A DigiKey parts list is also provide in Excel format; this can be directly uploaded to DigiKey website to create an order. As of April 2026 the cost of parts (excluding the items not currently manufactured) is approximately $60 USD. 
+
 # Future Expansion/Ideas
 
 This [file](FUTURE.md) contains my current thoughts on future expansions and/or design modifications.
