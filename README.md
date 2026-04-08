@@ -41,9 +41,27 @@ The following principles guided my development of this homebrew project. The lis
    
 8. **Compatibility.** I designed the `TI CUBE` to be generally compatible with other TMS 9900-based systems. One excellent example is [Stuart Connor's TMS 9900 breadboard/PCB system](http://www.stuartconner.me.uk/tms9900_breadboard/tms9900_breadboard.htm). In fact, the binary files he provides can be downloaded, burned to EPROMs, and used directly in the `TI CUBE`. This includes the TIBUG and EVMBUG monitors and Cortex BASIC which work right out of the box!
 
-# Hardware Specifications
+# Folders
 
-This [file](hardware/README.md) contains a description of the `TI CUBE` hardware design.
+## [KiCad/](KiCad/README.md)
+
+The complete schematic and PCB design files in KiCad format. The schematics are also available in PDF format.
+
+## [PLD configs/](PLD%20dconfigs/README.md)
+
+Files containing the address decoding logic for the various peripherals.
+
+## [firmware/](firmware/README.md)
+
+Binary files developed by Stuart Connor ready for burning to EPROMs. These contain TIBUG, EVMBUG, and Cortext BASIC.
+
+## [gerbers/](gerbers/README.md)
+
+PCB design files ready for uploaded to your favourite PCB manufacturing house.
+
+## [hardware/](gerbers/README.md)
+
+The bill of materials and suggestions for acquiring the necessary components.
 
 # Future Expansion/Ideas
 
@@ -61,6 +79,6 @@ This [file](FUTURE.md) contains my current thoughts on future expansions and/or 
 
 The following are excellent resources from other experimenters with the TMS 9900:
 
+* [Usagi Electric's](https://www.youtube.com/@UsagiElectric) awesome YouTube channel.
 * [Stuart Conner's Home Page](http://www.stuartconner.me.uk/) contains very helpful hardware designs and software files which I have referenced in the `TI CUBE` design.
 * [POWERTRAN Cortex](http://powertrancortex.com/index.html) contains source code for Cortex BASIC which can be modified to run on the `TI CUBE`.
-
