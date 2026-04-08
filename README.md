@@ -47,7 +47,7 @@ The following principles guided my development of this homebrew project. The lis
 
 The complete schematic and PCB design files in KiCad format. The schematics are also available in PDF format.
 
-## [PLD configs/](PLD%20dconfigs/README.md)
+## [PLD configs/](PLD%20configs/README.md)
 
 Files containing the address decoding logic for the various peripherals.
 
