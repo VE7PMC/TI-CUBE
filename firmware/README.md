@@ -9,4 +9,7 @@ For the `TI CUBE` the bank is selected using JP1 on the memory card (note: JP2 m
 
 # Demo running Cortex BASIC
 
+Note the following is using the version of Cortex BASIC stored in the lower bank (i.e. JP1 is set to "LO"). This version copies the BASIC interpreter into RAM, hence why there is only about 3 KiB of available code space. The other version in the upper bank (i.e. JP1 set to "HI") runs entirely from ROM and so has much more code space available.
+
+
 ![(Hellorld!)](/images/TI-CUBE%20demo.gif)
