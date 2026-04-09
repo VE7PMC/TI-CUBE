@@ -1,4 +1,4 @@
-# <img alt="TI CUBE logo" src="./images/TI%20CUBE%20logo.png" width="150"/>
+# The TI CUBE
 
 The `TI CUBE` is an open-source homebrew microcomputer project I designed around the Texas Instruments TMS 9900 microprocessor and its associated peripheral devices.
 
