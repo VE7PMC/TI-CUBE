@@ -9,4 +9,4 @@ For the `TI CUBE` the bank is selected using JP1 on the memory card (note: JP2 m
 
 # Demo running Cortex BASIC
 
-![(Hellorld!)](images/TI-CUBE%20demo.gif)
+![(Hellorld!)](/images/TI-CUBE%20demo.gif)
