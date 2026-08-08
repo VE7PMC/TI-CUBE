@@ -1,0 +1,61 @@
+Name            TI CUBE FM Sound CRU Address Decoder;
+Partno          ATF16V8 20-DIP;
+Revision        01;
+Date            2026/04/18;
+Designer        Paul Chernikhowsky;
+Company         ;
+Assembly        None;
+Location        U1;
+
+
+/* Pin Map 
+       --------
+A0     |1     20| Vcc
+A1     |2     19| /MEMEN 
+A2     |3     18| CRUCLK
+A3     |4     17| Address Select (0 = primary, 1 = secondary)
+A4     |5     16| Control 74LS259 Enable
+A5     |6     15| Data 74LS259 Enable
+A6     |7     14| FM Sound Enable LED
+A7     |8     13| A10
+A8     |9     12| A11
+GND    |10    11| A9
+        --------
+*/
+
+/*
+ * Inputs:  All are signals from the TMS9900
+ */
+
+Pin [1..9,11,13] = [A15..5]; /* CPU address - NOTE: this is inverted from real pin labels: A0 = MSB for TMS9900!! */
+Pin 19 = !MEMEN;		/* Active low for memory access cycle - high for CRU cycle */
+Pin 18 = CRUCLK;		/* CPUCLK output */
+Pin 12 = A11_addr;		/* CPU A11 address line - data or control select */
+Pin 17 = ADDR_SEL;		/* Address Select (0 = primary, 1 = secondary) */
+
+/*
+ * Outputs:  define outputs - all are simple combinatorial
+ */
+
+Pin 14 = !SOUND_ACCESS_LED;	/* FM Sound access in progress LED - active low */
+Pin 15 = !DATA_CS;	  	/* RAM access in process LED */
+Pin 16 = !CONTROL_CS;	  	/* ROM access in process LED */
+
+/*
+ * Local variables
+ */
+
+FIELD CPUAddress = [A15..5];	    /* CPU address bus */
+
+/*
+ * Logic:
+ */
+
+FMSound = CPUAddress:[0100..0140];  				/* FM sound mapped at 0x100 */
+
+DATA_CS = FMSound & !MEMEN & !A11_addr & CRUCLK;    /* Write to data byte 74LS259 */
+CONTROL_CS = FMSound & !MEMEN & A11_addr & CRUCLK;	/* Write to control signal 74LS259 */
+SOUND_ACCESS_LED = FMSound & !MEMEN & CRUCLK;		/* Sound access in progress access LED */
+
+
+
