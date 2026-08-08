@@ -55,13 +55,13 @@ Files containing the address decoding logic for the various peripherals.
 
 Binary files developed by Stuart Connor ready for burning to EPROMs. These contain TIBUG, EVMBUG, and Cortext BASIC.
 
-## [gerbers/](hardware/README.md)
-
-PCB design files ready for uploaded to your favourite PCB manufacturing house.
-
-## [hardware/](gerbers/README.md)
+## [hardware/](hardware/README.md)
 
 The bill of materials and suggestions for acquiring the necessary components.
+
+## [gerbers/](gerbers/README.md)
+
+PCB design files ready for uploaded to your favourite PCB manufacturing house.
 
 # Future Expansion/Ideas
 
