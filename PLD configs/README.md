@@ -33,3 +33,8 @@ These address ranges can be changed by editing the .pld file, recompiling the .j
 
 One ATF16V8 PLD (U5) is used to decode the memory address enables for the RAM and ROM devices on the `TI CUBE` Memory Board. By default the ROM is addressed from 0x0000 to 0x7FFF (32 kiB) and the RAM is addressed from 0x8000 to 0xFFFF (32 kiB). These address ranges can be changed by editing the .pld file, recompiling the .jed file, and then reprogramming U5.
 
+## TI-CUBE-FMSoundDecode Files
+
+One ATF16V8 PLD (U1) is used to decode the memory address enables for two 74LS259 8-bit address latches. These two ICs convert the TMS 9900 serial CRU bus to two parallel 8-bit bytes (one for data and one for control signals) to interface to the YM3812 FM synthesis IC. Currently, these are mapped to CRU address 0x100 (8 bits of data followed by 8 bits of control signals). 
+
+In the future, an additional input to the ATF16V8 could be used to select between a primary and secondary address (a jumper is already included in the schematic and PCB design for this purpose). By using two FM sound boards with one set to the primary address and the other to the secondary, playback of stereo FM could be supported.
