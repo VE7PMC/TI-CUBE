@@ -4,7 +4,7 @@ The `TI CUBE` is an open-source homebrew microcomputer project I designed around
 
 <img alt="Photo of the complete TI CUBE assembly" src="./images/Complete.jpg" />
 
-In its basic form the `TI CUBE` supports communications through two serial ports and has 32 KiB of ROM and 32 KiB of RAM for code and data storage.
+In its basic form the `TI CUBE` supports communications through two serial ports and has 32 KiB of ROM and 32 KiB of RAM for code and data storage. It also supports FM sound playback using the YM3812 OPL2 FM synthesis IC.
 
 # Why the TMS 9900?
 
