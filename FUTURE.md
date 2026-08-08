@@ -1,5 +1,11 @@
 # Thoughts on Future Expansion/Modifications
 
+## Can it play Doom?
+
+~~The short answer is "no, not even close." I'm working on an idea for a longer answer that starts with "yes, but...".~~
+
+**Yes - it can!** As long as your definition of "play" is limited to playing the sound files! The TMS 9900 CPU itself does not even come close to the capabilities required to render realtime 3D imagery, but when combined with the [Yamaha YM3812 FM synthesis](https://www.ardent-tool.com/datasheets/Yamaha_YM3812.pdf) and [YM3014B DAC](https://ardent-tool.com/datasheets/Yamaha_YM3014B.pdf) ICs it can certainly play the sound files (when converted to VGM format). Even still, the playback duration is limited to the available free RAM. With the current configuration this represents approximately 29,200 bytes of memory which is good for about 30 seconds of Doom music playback.
+
 ## External Instructions
 The TMS 9900 has an interesting feature where a handful of instructions can be decoded externally and used to trigger various hardware functions. These instructions are:
 | Mnemonic  | A0 | A1 | A2 | A3-A14 |
@@ -24,7 +30,3 @@ The `TI CUBE` memory board decodes the entire address space of the TMS 9900 but 
 
 ## Floppy and/or Hard Drive Controller
 The next step after the memory expansion described above would be to add non-volatile storage using using a floppy or hard-drive controller. This would also be necessary to support booting the MDEX/Unix systems described above.
-
-## Can it run Doom?
-
-The short answer is "no, not even close." I'm working on an idea for a longer answer that starts with "yes, but...".
