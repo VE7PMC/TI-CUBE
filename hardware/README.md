@@ -19,10 +19,20 @@
 -  2x ATF16V8 PLD for address decoding
 -  2x 10-pin 0.1 in header connectors using the AT/Everex standard pinout to connect serial devices
 -  Jumpers to allow address and interrupt selection for each TMS 9902
-4. **Protoboard** [(photo)](images/Protoboard.jpg)
+4. **FM Sound board** [(photo)](images/FM_sound.jpg)
+-  YM3812 OPL2 FM synthesis IC
+-  Y3014B digital to analog convertor 
+-  LM324 quad op-amp for buffering and 15 kHz anti-alias (low-pass) filter
+-  3.58 MHz crystal oscillator for the YM3812 clock
+-  LED and 555 timer (pulse-stretcher) to indicate write access to the FM chip
+-  ATF16V8 PLD for address decoding
+-  2x 74LS259 8-bit addressable latch to interface the YM3812 to the TMS9900 CRU bus
+-  Jumper to select primary or secondary I/O address (could be used with two boards to support stereo playback)
+-  Jumpers for IRQ selection (optional)
+5. **Protoboard** [(photo)](images/Protoboard.jpg)
 -  Unpopulated PCB with a large area of plated-through holes for prototyping
 -  Optional ATF16V8 PLD for address decoding
-5. **Backplane** [(photo)](images/Backplane.jpg)
+6. **Backplane** [(photo)](images/Backplane.jpg)
 -  4x 72-pin header sockets which support any combination of the cards above
 -  1x 72-pin header socket for daisy chaining multiple backplanes
 -  1x 72-pin header pin connector for daisy chaining multiple backplanes
