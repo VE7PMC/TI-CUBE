@@ -1,25 +1,25 @@
 # `TI CUBE` Hardware Specifications
 
-1. **CPU board** [(photo)](images/CPU.jpg)
+1. **CPU board** [(photo)](/images/CPU.jpg)
 -  TMS 9900 microprocessor running at 3 MHz[^1]
 -  TIM 9904 or TIM 9904A clock generator[^2]
 -  TMS 9901 programmable systems interface (PSI) for interrupt management
 -  ATF16V8 PLD for address decoding
 -  ICL7660 voltage convertor to generate the -5V power supply needed by the CPU
 -  2x red LEDs for CPU RESET signal and CPU activity (driven by the IAQ output) indication
-2. **Memory board** [(photo)](images/Memory.jpg)
+2. **Memory board** [(photo)](/images/Memory.jpg)
 -  2x EPROMs (e.g., 2764, 27128, 27256) for 32 KiB of EPROM[^3]
 -  2x static RAM (e.g., 55256) for 32 KiB of RAM[^3]
 -  2x red LEDs for RAM and ROM access indication
 -  ATF16V8 PLD for address decoding
 -  Jumpers to control use of the EPROM A14 address line or to select the high or low bank.
-3. **Serial I/O board** [(photo)](images/Serial_IO.jpg)
+3. **Serial I/O board** [(photo)](/images/Serial_IO.jpg)
 -  2x TMS 9902 asynchronous communications controllers (ACC)
 -  2x MAX232 interfaces for EIA-232C compatible serial ports
 -  2x ATF16V8 PLD for address decoding
 -  2x 10-pin 0.1 in header connectors using the AT/Everex standard pinout to connect serial devices
 -  Jumpers to allow address and interrupt selection for each TMS 9902
-4. **FM Sound board** [(photo)](images/FM_sound.jpg)
+4. **FM Sound board** [(photo)](/images/FM_sound.jpg)
 -  YM3812 OPL2 FM synthesis IC
 -  Y3014B digital to analog convertor 
 -  LM324 quad op-amp for buffering and 15 kHz anti-alias (low-pass) filter
@@ -29,10 +29,10 @@
 -  2x 74LS259 8-bit addressable latch to interface the YM3812 to the TMS9900 CRU bus
 -  Jumper to select primary or secondary I/O address (could be used with two boards to support stereo playback)
 -  Jumpers for IRQ selection (optional)
-5. **Protoboard** [(photo)](images/Protoboard.jpg)
+5. **Protoboard** [(photo)](/images/Protoboard.jpg)
 -  Unpopulated PCB with a large area of plated-through holes for prototyping
 -  Optional ATF16V8 PLD for address decoding
-6. **Backplane** [(photo)](images/Backplane.jpg)
+6. **Backplane** [(photo)](/images/Backplane.jpg)
 -  4x 72-pin header sockets which support any combination of the cards above
 -  1x 72-pin header socket for daisy chaining multiple backplanes
 -  1x 72-pin header pin connector for daisy chaining multiple backplanes
