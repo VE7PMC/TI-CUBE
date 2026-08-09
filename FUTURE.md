@@ -8,6 +8,9 @@
 
 Instructions to upload the VGM Player object code and an associated VGM file can be found [here](/code/VGMPlay/README.md#uploading-the-object-code-and-vgm-files).
 
+And here's a video demo:
+[![Watch the TI CUBE play Doom!](https://img.youtube.com/vi/pIbxxHVAydw/maxresdefault.jpg)](https://www.youtube.com/watch?v=pIbxxHVAydw)
+
 ## External Instructions
 The TMS 9900 has an interesting feature where a handful of instructions can be decoded externally and used to trigger various hardware functions. These instructions are:
 | Mnemonic  | A0 | A1 | A2 | A3-A14 |
