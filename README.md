@@ -6,7 +6,7 @@ The `TI CUBE` is an open-source homebrew microcomputer project I designed around
 
 In its basic form the `TI CUBE` supports communications through two serial ports and has 32 KiB of ROM and 32 KiB of RAM for code and data storage. It also supports FM sound playback using the YM3812 OPL2 FM synthesis IC. **This even allows it to play Doom!**
 
-\* of course it can't "play" Doom in the sense of rendering 3D video! [But it can *play back* the the Doom music using the YM3812 FM synthesizer.](https://www.youtube.com/watch?v=pIbxxHVAydw)
+\* of course it can't "play" Doom in the sense of rendering 3D video! [But it can *play back* the Doom music using the YM3812 FM synthesizer.](https://www.youtube.com/watch?v=pIbxxHVAydw)
 
 # Why the TMS 9900?
 
