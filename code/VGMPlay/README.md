@@ -1,6 +1,6 @@
 # VGM Player
 
-Source code to generate a TMS 9900 object format code that will decode an play back [VGM format](https://vgmrips.net/wiki/VGM_Specification) sound files.
+Source code to generate TMS 9900 object format code that will decode an play back [VGM format](https://vgmrips.net/wiki/VGM_Specification) sound files.
 
 ## File Descriptions
 
