@@ -12,6 +12,9 @@ Source code to generate a TMS 9900 object format code utility that will decode a
 
 ## Prerequisites
 
+> [!NOTE]
+> The following steps are only needed if you want to modify or build the `vgmplay.obj` file from scratch. Otherwise you can just download `vgmplay.obj` from this repository and skip to the Uploading the [Object Code and VGM Files section below](README.md#uploading-the-object-code-and-vgm-files).
+
 1. You will need to install the TI-990 cross assembler and linker. Both tarball files are hosted by Dave Pitts.\
 [asm990-2.4.5](https://cozx.com/dpitts/tarballs/ti990/asm990-2.4.5.tar.gz)\
 [lnk990-2.3.2](https://cozx.com/dpitts/tarballs/ti990/lnk990-2.3.2.tar.gz)
@@ -37,9 +40,11 @@ $ make
 $ sudo make install
 ```
 
-## Uploading the object code and VGM files
+5. Download `vgmplay.asm` and `Makefile` into a local directory and the build
 
-1. Upload the object file to the `TI CUBE` using Stuart Conner's [Keyboard Sender](http://www.stuartconner.me.uk/tibug_evmbug/tibug_evmbug.htm#pc_keyboard_sender_utility) utility.
+## Uploading the Object Code and VGM Files
+
+1. Upload the object file to the `TI CUBE` using Stuart Conner's [Keyboard Sender](http://www.stuartconner.me.uk/tibug_evmbug/tibug_evmbug.htm#pc_keyboard_sender_utility) utility and a terminal program (e.g., Teraterm).
 * The object file should be loaded using the TIBUG `L` command.
 * The relocatable object code address should be set to >8000 (hex).
 
