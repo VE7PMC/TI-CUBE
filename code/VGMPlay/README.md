@@ -48,7 +48,7 @@ $ sudo make install
 * The object file should be loaded using the TIBUG `L` command.
 * The relocatable object code address should be set to >8000 (hex).
 
-2. Use the Keyboard Sender utility again to upload a VGM format music file to the `TI CUBE`
+2. Use the Keyboard Sender utility again to upload a VGM format music file to the `TI CUBE`. Sample sound files can be found in the `/music` folder.
 * The file extension should be .HEX for the Keyboard Sender utility to recognize it.
 * The start address must be set to >9000 using entering `M 9000` at the TIBUG command prompt. 
 
