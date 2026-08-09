@@ -45,7 +45,7 @@ $ sudo make install
 ## Uploading the Object Code and VGM Files
 
 1. Upload the object file to the `TI CUBE` using Stuart Conner's [Keyboard Sender](http://www.stuartconner.me.uk/tibug_evmbug/tibug_evmbug.htm#pc_keyboard_sender_utility) utility and a terminal program (e.g., Teraterm).
-* The object file should be loaded using the TIBUG `L` command.
+* The `vgmplay.obj` object file should be loaded using the TIBUG `L` command.
 * The relocatable object code address should be set to >8000 (hex).
 
 2. Use the Keyboard Sender utility again to upload a VGM format music file to the `TI CUBE`. Sample sound files can be found in the `/music` folder.
