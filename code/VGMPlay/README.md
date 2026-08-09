@@ -13,7 +13,7 @@ Source code to generate a TMS 9900 object format code utility that will decode a
 ## Prerequisites
 
 > [!NOTE]
-> The following steps are only needed if you want to modify or build the `vgmplay.obj` file from scratch. Otherwise you can just download `vgmplay.obj` from this repository and skip to the Uploading the [Object Code and VGM Files section below](README.md#uploading-the-object-code-and-vgm-files).
+> The following steps are only needed if you want to modify or build the `vgmplay.obj` file from scratch. Otherwise you can just download `vgmplay.obj` from this repository and skip to the [Uploading the Object Code and VGM Files section below](README.md#uploading-the-object-code-and-vgm-files).
 
 1. You will need to install the TI-990 cross assembler and linker. Both tarball files are hosted by Dave Pitts.\
 [asm990-2.4.5](https://cozx.com/dpitts/tarballs/ti990/asm990-2.4.5.tar.gz)\
