@@ -12,32 +12,38 @@ Source code to generate a TMS 9900 object format code that will decode an play b
 
 ## Prerequisites
 
-1. You will need to install the TI-990 cross assembler and linker. Download the compiler source and the libc library. Both files are hosted by Dave Pitts.
-[asm990-2.4.5](https://cozx.com/dpitts/tarballs/ti990/asm990-2.4.5.tar.gz)
+1. You will need to install the TI-990 cross assembler and linker. Both tarball files are hosted by Dave Pitts.\
+[asm990-2.4.5](https://cozx.com/dpitts/tarballs/ti990/asm990-2.4.5.tar.gz)\
 [lnk990-2.3.2](https://cozx.com/dpitts/tarballs/ti990/lnk990-2.3.2.tar.gz)
 
-2. Create a binary directory in which the compiler will be built.
+3. Create a binary directory in which the compiler will be built.
+```shell
 $ cd /your_source_dir
+```
 
 3. Extract the sources.
+```shell
 $ tar xzf asm990-2.4.1.tar.gz
 $ tar xzf lnk990-2.2.1.tar.gz
+```
 
 4. Make and install the assembler and linker.
+```shell
 $ cd /your_source_dir/asm990
 $ make
 $ sudo make install
 $ cd /your_source_dir/lnk990
 $ make
 $ sudo make install
+```
 
 ## Uploading the object code and VGM files
 
 1. Upload the object file to the `TI CUBE` using Stuart Conner's [Keyboard Sender](http://www.stuartconner.me.uk/tibug_evmbug/tibug_evmbug.htm#pc_keyboard_sender_utility) utility.
-* The object file should be loaded using the TIBUG "L" command.
+* The object file should be loaded using the TIBUG `L` command.
 * The relocatable object code address should be set to >8000 (hex).
 
 2. Use the Keyboard Sender utility again to upload a VGM format music file to the `TI CUBE`
 * The file extension should be .HEX for the Keyboard Sender utility to recognize it.
-* The start address must be set to >9000 using entering "M 9000" at the TIBUG command prompt. 
+* The start address must be set to >9000 using entering `M 9000` at the TIBUG command prompt. 
 
